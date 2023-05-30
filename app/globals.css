@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: #D8D8D8;
+  --background-rgb: #404258;
+}
+
+
+
+body {
+  color: var(--foreground-rgb);
+  background-color: var(--background-rgb)
+}
+
+
+.btn {
+  @apply px-3 py-2 rounded-md capitalize font-bold tracking-tight w-fit h-auto ml-auto border-2 border-cyan-300
+}
+
+.btn-primary {
+  @apply bg-emerald-500 text-stone-800
+}
+
+.btn-danger {
+  @apply bg-red-500 text-red-100
+}
+
+.btn-google {
+  @apply bg-red-400 text-gray-800
+}
+
+.link {
+  @apply px-3 py-2 text-base capitalize rounded-sm bg-slate-950 text-sky-100 ring-1 ring-sky-500
+}
+
+.link:hover {
+  @apply bg-slate-800/80
+}
+
+.setting,
+.singout {
+  @apply p-2 cursor-pointer transition-colors flex justify-start items-center gap-2
+}
+
+.setting:hover,
+.singout:hover {
+  @apply bg-slate-700/40
+}
